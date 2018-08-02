@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Why-how-what framework</title>
+	<link rel="stylesheet" href="m2ci2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>	
+	
+<script type="text/javascript">
+  $(document).ready(function(){
+   $("#viewFramework").click(function(){
+	   $("#intro").hide();
+	   $("#sinek").show();
+	   $("#backButton1").show();
+	   $("#nextButton").show();
+});
+		
+  $("#backButton1").click(function(){
+   	   $("#intro").show();
+	   $("#sinek").hide();
+	   $("#backButton1").hide();
+	   $("#nextButton").hide();
+});	
+$("#nextButton").click(function(){
+   	   $(".left").hide();
+	   $(".secondText").show();
+	   $("#backButton1").hide();
+	   $("#backButton2").show();
+	   $("#nextButton").hide();
+	   $("#lastButton").show();
+});	
+$("#backButton2").click(function(){
+	   $(".left").show();
+	   $(".secondText").hide();
+	   $("#backButton1").show();
+	   $("#backButton2").hide();
+	   $("#nextButton").show();
+	   $("#nextButton2").hide();
+	   $("#lastButton").hide();
+});	
+$("#lastButton").click(function(){
+	 $("#sinek").hide();
+	 $("#apple").show();
+	 $("#lastButton").hide();
+	 $("#backButton1").hide();
+	 $("#backButton2").hide();
+	 $("#backButton3").show();
+	});	
+$("#backButton3").click(function(){
+	 $("#sinek").show();
+	 $("#apple").hide();
+	 $("#lastButton").show();
+	 $("#backButton1").hide();
+	 $("#backButton2").show();
+	 $("#backButton3").hide();
+	});
+  $("#hover-area1").click(function(){
+    $("#reveal1").slideToggle(300);
+  });
+$("#hover-area2").click(function(){
+    $("#reveal2").slideToggle(300);
+  });
+$("#hover-area3").click(function(){
+    $("#reveal3").slideToggle(300);
+  });	
+});
+	
+</script>
+	<div id="content">
+		<section id="intro">
+		<div class="left">
+		<h3>What?</h3>
+		<p>It’s easy to think that a brand’s success will be solely down to its product and service features and benefits, or in other words, ‘what the brand does’.  As a result, lots of brands focus their marketing on all the features and benefits they offer.</p>
+			</div>
+		<div class="left">
+		<h3>Why?</h3>
+		<p>Simon Sinek, an author and marketing consultant, argues that successful brands start their marketing with ‘why’ 1. This approach directs a company towards a bigger purpose and also attracts customers who share your core beliefs.</p>
+			</div>
+	<button id="viewFramework">View the Framework</button>
+	</section>
+	
+	<section id="sinek">
+		<p class="left">Sinek introduces a framework called the ‘Why-how-what’ that could help marketers shift their branding approach to start with the ‘why’ rather than the ‘what’.<br><br>Click each circle below to learn more about the framework</p>
+		<p class="secondText">A lot of companies make the mistake of planning their marketing backwards, starting at the outside of the circle with their ‘what’ and then moving onto the ‘how’. Many companies don’t even know ‘why’ they do it (beyond making a profit).</p>
+		<img src="images/m2ci2-bg.jpg">
+	<button class="label" id="hover-area1">What?</button>
+	<button class="label" id="hover-area2">How?</button>
+	<button class="label" id="hover-area3">Why?</button>
+	<ul>
+		<li id="reveal1">
+			This is your purpose, cause or belief - it's why your organisation exists. why you get out of bed in the morning and why anyone should care.
+		</li>
+	<li id="reveal2">
+			This is what makes you different, or makes you stand out from the crowd.
+		</li>
+		<li id="reveal3">
+			This is the product you sell or the service you offer.
+		</li>
+	</ul>
+			
+	</section>
+		
+	<section id="apple">
+		<p class="topText">The classic success story of a brand that started with the ‘why’ is Apple. See what Apple’s brand messages would look like if it started with the ‘what’ and if it started with the ‘why’ below:</p>
+		<div class="what">
+			<h1>What?</h1>
+			<p>If Apple focused on the ‘what’, its brand message would look something like this:<br><br><strong><em>We make great computers. They’re beautifully designed, simple to use and user-friendly. Want to buy one?</em></strong></p></div>
+		<div class="why">
+			<h1>Why?</h1>
+			<p>If apple start with the ‘why’, you get something like this:<br><br><strong><em>Everything we do, we believe in challenging the status quo and thinking differently. The way we challenge the status quo is by making our products beautifully designed, simple to use and user friendly. We just happen to make great computers.</em></strong></p></div>
+	</section>
+		
+	<button id="backButton1" type="button">Back</button>
+	<button id="backButton2" type="button">Back</button>
+	<button id="backButton3" type="button">Back</button>
+	<button id="nextButton" type="button">Next</button>
+	<button id="lastButton" type="button">How this is applied</button>
+	</div>
+</body>
+</html>
